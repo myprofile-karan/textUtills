@@ -5,14 +5,12 @@ import proptypes from 'prop-types';
 
 const Header = (props) =>{
     return(
-        <header>
-            <h1>{props.title}</h1>
-            <nav>
-                <a href="www.google.com">{props.nav}</a>
-                <a href="www.google.com">About</a>
-                <a href="www.google.com">Services</a>
-                <a href="www.google.com">About us</a>
-            </nav>
+        <header className={`bg-${props.mode}`}>
+            <h2 className={`text-${props.mode==='light'?'dark':'light'}`}>{props.title}</h2>
+            <div className={`text-${props.mode==='light'?'dark':'light'}`}>
+                <label htmlFor="checkbox" className='me-2'> enable dark mode</label>
+                <input type="checkbox" onClick={props.toggleMode} className='me-2'/>
+            </div>
         </header>
     );
 };

@@ -1,12 +1,10 @@
 header{
     width: 100%;
-    background-color: grey;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 header h1{
-    color: white;
     font-size: 2rem;
     margin-left: 40px;
 }
@@ -17,6 +15,5 @@ nav{
     margin-right: 40px;
 }
 nav a{
-    color: white;
     text-decoration: none;
 }
