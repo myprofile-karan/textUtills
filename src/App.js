@@ -1,11 +1,8 @@
 import './App.css';
 import Header from './components/Header';
-import Card from './components/Card';
 import TextForm from './components/TextForm';
-import movies from './movie.json';
-import DarkMode from './components/DarkMode';
 import React, { useState } from 'react'
-
+  
 
 function App() {
   const [Mode, setMode] = useState('light');
@@ -27,7 +24,7 @@ function App() {
       <Header title="Hello World" toggleMode={toggleMode} mode={Mode} nav="Home"/>
       {/* <Header title="LOGO" nav="NewHome" />    another Header made by props */}
       {/* <Card/> */}
-      {/* <div className='main'>
+      {/* <div className='main'> 
         {
           movies.map((element, index)=> {
             return(
@@ -35,9 +32,11 @@ function App() {
             )
           })
         }
-      </div> */}
+      </div>  */}
       <TextForm heading="Convert to uppercase" mode={Mode} />
       {/* <DarkMode/> */}
+      {/* <Basicform /> */}
+      {/* <Counter /> */}
     </>
   );
 };
